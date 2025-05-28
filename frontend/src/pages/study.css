@@ -1,0 +1,280 @@
+/* Study Environment Background - Calming, focused gradient */
+.min-h-screen {
+  background: linear-gradient(-45deg, #E3F2FD, #F3E5F5, #E8EAF6, #E0F7FA);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Enhanced Card Styles with Subtle 3D Effects */
+.bg-white {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 4px 20px 0 rgba(31, 38, 135, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+  transform-style: preserve-3d;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bg-white:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+
+
+.absolute.w-full.h-full.cursor-pointer[style*="transform: rotateY(180deg)"] {
+  animation: revealAnswer 0.6s ease-out;
+}
+
+
+
+@keyframes revealAnswer {
+  0% { transform: rotateY(0) scale(1); }
+  50% { transform: rotateY(90deg) scale(1.1); }
+  100% { transform: rotateY(180deg) scale(1); }
+}
+
+/* Calm Button Styles for Study Environment */
+.bg-blue-500 {
+  background: linear-gradient(45deg, #3f51b5, #2196f3) !important;
+  box-shadow: 
+    0 4px 15px rgba(63, 81, 181, 0.3),
+    0 0 15px rgba(33, 150, 243, 0.2),
+    inset 0 0 8px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.bg-blue-500:hover {
+  background: linear-gradient(45deg, #2196f3, #3f51b5) !important;
+  transform: translateY(-2px);
+  box-shadow: 
+    0 6px 20px rgba(63, 81, 181, 0.4),
+    0 0 20px rgba(33, 150, 243, 0.3),
+    inset 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+
+
+/* Enhanced Quiz Options */
+.quiz-option {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.quiz-option::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.quiz-option:hover::before {
+  left: 100%;
+}
+
+/* Study-Focused Title */
+.text-3xl.font-bold {
+  color: #3f51b5;
+  text-shadow: 
+    0 2px 4px rgba(63, 81, 181, 0.2),
+    0 0 10px rgba(33, 150, 243, 0.1);
+  transition: all 0.3s ease;
+}
+
+.text-3xl.font-bold:hover {
+  text-shadow: 
+    0 4px 8px rgba(63, 81, 181, 0.3),
+    0 0 15px rgba(33, 150, 243, 0.2);
+}
+
+/* Focused Tab Design */
+.flex-1.px-4.py-3 {
+  position: relative;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(63, 81, 181, 0.1);
+}
+
+.flex-1.px-4.py-3:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+}
+
+.flex-1.px-4.py-3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #3f51b5, #2196f3);
+  transition: all 0.3s ease;
+}
+
+.flex-1.px-4.py-3:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+/* Study-Focused Input Fields */
+input[type="text"],
+input[type="number"] {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid rgba(63, 81, 181, 0.1);
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 2px 10px rgba(0, 0, 0, 0.05),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  transform: translateY(-1px);
+  border-color: #3f51b5;
+  box-shadow: 
+    0 4px 15px rgba(63, 81, 181, 0.1),
+    inset 0 0 0 2px rgba(63, 81, 181, 0.2);
+}
+
+/* Calm Scrollbar for Study Environment */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #3f51b5, #2196f3);
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #2196f3, #3f51b5);
+}
+
+/* Enhanced Quiz Results with Focused Feedback */
+.bg-green-100 {
+  animation: calmSuccessGlow 3s infinite;
+  background: rgba(232, 245, 233, 0.9) !important;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.bg-red-100 {
+  animation: calmErrorGlow 3s infinite;
+  background: rgba(255, 235, 238, 0.9) !important;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+@keyframes calmSuccessGlow {
+  0%, 100% { box-shadow: 0 0 10px rgba(76, 175, 80, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(76, 175, 80, 0.5); }
+}
+
+@keyframes calmErrorGlow {
+  0%, 100% { box-shadow: 0 0 10px rgba(244, 67, 54, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(244, 67, 54, 0.5); }
+}
+
+/* Goals Section Enhancement */
+.goals-section {
+  background: linear-gradient(135deg, rgba(63, 81, 181, 0.05), rgba(33, 150, 243, 0.05));
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 
+    0 4px 20px rgba(63, 81, 181, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+/* Video Section Styling */
+.video-section {
+  background: linear-gradient(135deg, rgba(63, 81, 181, 0.03), rgba(33, 150, 243, 0.03));
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 
+    0 4px 20px rgba(63, 81, 181, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+}
+
+/* Chat Panel with Study Focus */
+.w-96 {
+  animation: gentleSlide 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(10px);
+  border-left: 1px solid rgba(63, 81, 181, 0.1);
+  box-shadow: -5px 0 20px rgba(63, 81, 181, 0.1);
+}
+
+@keyframes gentleSlide {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design Optimization */
+@media (max-width: 768px) {
+  .min-h-screen {
+    background-size: 200% 200%;
+  }
+  
+  .w-96 {
+    width: 100%;
+    height: 80vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px 20px 0 0;
+    animation: gentleSlideUp 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  @keyframes gentleSlideUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .max-w-7xl {
+    padding: 1rem;
+  }
+  
+  .flex.space-x-6 {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
