@@ -1,7 +1,5 @@
 # Techiee Hackers 
 ## Team Details
-
-- **Team Number:** 51  
 - **Team Name:** Techiee Hackers
 - **Team Leader:** Mohamed Abubakkar S  
 - **Email:** mdabucse@gmail.com  
