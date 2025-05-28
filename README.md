@@ -1,9 +1,4 @@
-# Welcome Techiee Hackers 👋
-
-Hello Team **Techiee Hackers** from **Sri Eshwar College Of Engineering**,
-
-Welcome to the Hackathon! We're excited to have you on board and can't wait to see what you'll build under the theme **"Digital solutions for rural education"** 
-
+# Techiee Hackers 
 ## Team Details
 
 - **Team Number:** 51  
@@ -12,7 +7,8 @@ Welcome to the Hackathon! We're excited to have you on board and can't wait to s
 - **Email:** mdabucse@gmail.com  
 
 ### Team Members:
-- Monish G 
+- Monish G
+  
 **Sketch Mentor**
 
 **Your personal AI-powered study companion**
